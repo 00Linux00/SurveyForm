@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
+:root {
+    --color-white: #f4f1f1;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-blue: #39a4d5;
+}
+
+
+*
+*::before
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+
+body::before {
+    content: ' ';
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--color-darkblue);
+    background-image: linear-gradient(
+        236deg, rgba(139, 20, 194, 0.611), rgba(41, 27, 169, 0.423)),
+     url(https://cdn.seeklearning.com.au/media/images/career-guide/module/software-developer-module.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+ 
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    color: rebeccapurple;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    line-height: 1.4;
+    color: lavender;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    padding-top: 0.8rem;
+}
+
+h1, p {
+    margin-top: 0;
+}
+/*====Moblie - - - - PC/Latop screen====*/
+.container {
+    width: 100%;
+    margin: 29px auto 0 auto;
+}
+
+@media (min-width: 640px){
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 750px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+#title {
+    font-style: bold;
+}
+
+#discription {
+    font-style: italic;
+    font-size: 200;
+}
+
+/*==========FORM==============*/
+
+form {
+    background-color: var(--color-darkblue-alpha);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem 4rem 1.5rem 4rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+}
+
+input,
+button, textarea {
+    margin: 0;
+    line-height: initial;
+    font-size: initial;
+    font-family: initial;
+}
+
+.form-group {
+    margin: 1.5rem 1rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding-left: 1rem;
+    color: var(--color-white);
+    background: transparent;
+    background-color: #1D1E22;
+    background-clip: padding-box;
+    border: 1px solid #4b4d4f;
+    border-radius: 1.5rem;
+    outline: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-sizing: border-box;
+}
+
+.form-dropdown {
+    margin: -0.6rem 1rem 1rem 1rem;
+}
+
+.form-dropdown > p {
+    margin-bottom: 0.2rem;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.8rem;
+    min-height: 0.9rem;
+    min-width: 0.9rem;
+}
+
+.input-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.8rem;
+    margin-left: -13px;
+    resize: vertical;
+}
+
+#submit {
+    margin-left: 1px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-blue);
+    color: #384249;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Apply Form For IT Secion</h1>
+            <i id="discription"> You wanna go fast - You go alone<br>You wanna go long - You can go with us</i>
+        </header>
+
+        <form action="#" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">First Name</label>
+                <input 
+                    type="text" 
+                    name="name"
+                    id="name"
+                    placeholder="First Name..."
+                    class="form-control"
+                    required/>
+            </div>
+            
+            <div class="form-group">
+                <label for="last_name" >Last Name</label>
+                <input 
+                    type="text"
+                    name="last__name"
+                    id="last_name" 
+                    class="form-control"
+                    placeholder="Last Name..."
+                    required/>                    
+            </div>
+                                <!----------------Name.end---------------->
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" 
+                       name="email" 
+                       id="email" 
+                       class="form-control email-input" 
+                       placeholder="Your email..." required/>
+            </div>
+                                <!----------------email--------------->
+            <div class="form-group">
+                <label for="number" id="number-label">How Old Are You?</label>
+                <input type="number" 
+                       id="number" 
+                       name="number" 
+                       min="17" 
+                       max="45" 
+                       class="form-control" 
+                       placeholder="Enter your age..." required/>                
+            </div>                
+                                <!-------------------age-------------->
+            <div class="form-group form-dropdown">
+                <p>Your Experience</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select your experience</option>
+                    <option value="0">0</option>
+                    <option value="under1">Under 1 year</option>
+                    <option value="above2">Above 2 years</option>
+                    <option value="under5">Under 5 years</option>
+                    <option value="above5">5 years and more</option>
+                </select>           
+            </div>              
+                                <!-------------experience.end--------->
+                                <!------------dropdown--option-------->
+            <div class="form-group form-dropdown">
+                <p>Which field do you want to apply?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value> </option>
+                    <option value="">Software Enginer</option>
+                    <option value="">Font End</option>
+                    <option value="">Back End</option>
+                    <option value="">Full Strack</option>
+                    <option value="">System/Sever</option>
+                    <option value="">Tester</option>
+                    <option value="">Pentester</option>
+                    <option value="">UI/UX</option>
+                    <option value="">Graphic Design</option>
+                    <option value="">None above</option>
+                </select>
+            </div>
+                                <!------------position-apply---------->
+                                <!---------------dropdown------------->
+            <div class="form-group">
+                <p>How kind of salary do you expect?</p>
+                <label>
+                    <input type="radio" value="under-1k" name="user-recommend" class="input-radio" checked>Under 1000$</label>
+                
+                <label>
+                    <input type="radio" value="1k" name="user-recommend" class="input-radio">1000$</label>
+                
+                <label> 
+                    <input type="radio" name="user-recommend" value="2k" class="input-radio">2000$</label>
+                
+                <label>
+                    <input type="radio" name="user-recommend" value="3k" class="input-radio">3000$</label>
+                    
+                <label>
+                    <input type="radio" name="user-recommend" value="4k" class="input-radio">4000$</label>
+                    
+                <label>
+                    <input type="radio" name="user-recommend" value="5k" class="input-radio">5000$</label>
+                    
+                <label>
+                    <input type="radio" name="user-recommend" value="0" class="input-radio">I will answer at the interview</label>
+            </div>
+                                <!-------------salary----------------->
+                                <!---------------radio---------------->
+            <fieldset class="form-group">
+                <legend>Where you had learned the code?</legend>
+                <label>
+                    <input type="checkbox" name="prefer" value="school" class="input-checkbox">University/College</label>
+                    
+                <label>
+                    <input type="checkbox" name="prefer" value="self" class="input-checkbox">Self-Taught</label>
+                
+                <label>
+                    <input type="checkbox" name="prefer" valu="code-center" class="input-checkbox">Programing Teaching Center</label>
+            </fieldset>
+                                <!-------------where--learning-------->
+                                <!--------------checkbox-------------->
+            <div class="form-group">
+                <p>Can you tell us more about yourself</p>
+                <textarea name="comment" id="comment" class="input-textarea" placeholder="Anything else?"></textarea>
+            </div>
+
+            <div class="form-group"><button id="submit" type="submit">Apply</button></div>
+        </form>
+    </div>
+</body>
+</html>
